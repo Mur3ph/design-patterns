@@ -1,0 +1,64 @@
+package ie.murph.observer.DerekBanasStockPrices;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class StockGrabber implements Subject
+{
+	private List<Observer> observers;
+	private double ibmStockPrice;
+	private double appleStockPrice;
+	private double googleStockPrice;
+	
+	public StockGrabber()
+	{
+	    this.observers = new ArrayList<Observer>();
+	}
+
+	@Override
+	public void register(Observer observerToBeAdded) 
+	{
+	    System.out.println("++register()");
+	    this.observers.add(observerToBeAdded);
+	    System.out.println("--register()");
+	}
+
+	@Override
+	public void unregister(Observer observerToBeRemoved) 
+	{
+	    System.out.println("++unregister()");
+	    int positionOfObserverToBeDeleted = observers.indexOf(observerToBeRemoved);
+	    this.observers.remove(positionOfObserverToBeDeleted);
+	    System.out.println("--unregister()");
+	}
+
+	@Override
+	public void notifyObserver() 
+	{
+	    System.out.println("++notifyObserver()");
+	    for(Observer observer : this.observers)
+	    {
+		observer.udate(appleStockPrice, googleStockPrice, ibmStockPrice);
+	    }
+	    System.out.println("--notifyObserver()");
+	}
+	
+	public void setIBMStockPrice(double ibmStockPrice)
+	{
+	    this.ibmStockPrice = ibmStockPrice;
+	    this.notifyObserver();
+	}
+	
+	public void setGoogleStockPrice(double googleStockPrice)
+	{
+	    this.googleStockPrice = googleStockPrice;
+	    this.notifyObserver();
+	}
+	
+	public void setAppleStockPrice(double appleStockPrice)
+	{
+	    this.appleStockPrice = appleStockPrice;
+	    this.notifyObserver();
+	}
+	
+}
