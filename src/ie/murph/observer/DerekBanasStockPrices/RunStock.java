@@ -24,13 +24,13 @@ public class RunStock
 	
 	stockGrabber.unregister(stockObserver1);
 	
-//	Runnable getIBM = new GetTheStockUsingThreads(stockGrabber, 2, "IBM", 197.00);
-//	Runnable getAPPLE = new GetTheStockUsingThreads(stockGrabber, 4, "APPLE", 677.60);
-//	Runnable getGOOGLE = new GetTheStockUsingThreads(stockGrabber, 6, "GOOGLE", 676.40);
-//	
-//	new Thread(getIBM).start();
-//	new Thread(getAPPLE).start();
-//	new Thread(getGOOGLE).start();
+	Runnable getIBM = new GetStockPricesUsingThreads(stockGrabber, 2, "IBM", 197.00);
+	Runnable getAPPLE = new GetStockPricesUsingThreads(stockGrabber, 4, "APPLE", 677.60);
+	Runnable getGOOGLE = new GetStockPricesUsingThreads(stockGrabber, 6, "GOOGLE", 676.40);
+	
+	new Thread(getIBM).start();
+	new Thread(getAPPLE).start();
+	new Thread(getGOOGLE).start();
 	
 	System.out.println("--RunStock Class");
     }
