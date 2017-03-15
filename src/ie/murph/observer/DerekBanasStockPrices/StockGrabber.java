@@ -18,29 +18,29 @@ public class StockGrabber implements Subject
 	@Override
 	public void register(Observer observerToBeAdded) 
 	{
-	    System.out.println("++register()");
+	    System.out.println("++register()\n");
 	    this.observers.add(observerToBeAdded);
-	    System.out.println("--register()");
+	    System.out.println("--register()\n");
 	}
 
 	@Override
 	public void unregister(Observer observerToBeRemoved) 
 	{
-	    System.out.println("++unregister()");
+	    System.out.println("++unregister()\n");
 	    int positionOfObserverToBeDeleted = observers.indexOf(observerToBeRemoved);
 	    this.observers.remove(positionOfObserverToBeDeleted);
-	    System.out.println("--unregister()");
+	    System.out.println("--unregister()\n");
 	}
 
 	@Override
 	public void notifyObserver() 
 	{
-	    System.out.println("++notifyObserver()");
+	    System.out.println("++notifyObserver()\n");
 	    for(Observer observer : this.observers)
 	    {
 		observer.udate(appleStockPrice, googleStockPrice, ibmStockPrice);
 	    }
-	    System.out.println("--notifyObserver()");
+	    System.out.println("--notifyObserver()\n");
 	}
 	
 	public void setIBMStockPrice(double ibmStockPrice)

@@ -22,7 +22,8 @@ public class GetStockPricesUsingThreads implements Runnable
 	@Override
 	public void run() 
 	{
-	    for(int i = 0; i <= 20; i++){
+	    for(int i = 0; i <= 20; i++)
+	    {
 			
 		try
 		{
@@ -35,18 +36,47 @@ public class GetStockPricesUsingThreads implements Runnable
 		}
 		finally
 		{
-		    double randNum = (Math.random() * (0.06) - 0.03);
-		    DecimalFormat decimalFormat = new DecimalFormat("#.##");
-		    price = Double.valueOf(decimalFormat.format((price+randNum)));
+		    double randNum = getRandomStockPrice();
+		    price = Double.valueOf(formatPriceToTwoDecimalPlaces().format((price+randNum)));
 				
-		    if(stock == "IBM") ((StockGrabber) stockGrabber).setIBMStockPrice(price);
-		    if(stock == "APPLE") ((StockGrabber) stockGrabber).setIBMStockPrice(price);
-		    if(stock == "GOOGLE") ((StockGrabber) stockGrabber).setIBMStockPrice(price);
+		    isIBMStock();
+		    isAppleStock();
+		    isGoogleStock();
 				
-		    System.out.println(stock + " Stock: " + decimalFormat.format((price+randNum)) + " Change: " + decimalFormat.format(randNum));
+		    printStockPrices(randNum);
 		    System.out.println("");
 		}
 			
-		}
+	    }
+	}
+	
+	private double getRandomStockPrice()
+	{
+	    return (Math.random() * (0.06) - 0.03);
+	}
+	
+	private DecimalFormat formatPriceToTwoDecimalPlaces()
+	{
+	    return new DecimalFormat("#.##");
+	}
+	
+	private void isIBMStock()
+	{
+	    if(stock == "IBM") ((StockGrabber) stockGrabber).setIBMStockPrice(price);
+	}
+	
+	private void isAppleStock()
+	{
+	    if(stock == "APPLE") ((StockGrabber) stockGrabber).setAppleStockPrice(price);;
+	}
+	
+	private void isGoogleStock()
+	{
+	    if(stock == "GOOGLE") ((StockGrabber) stockGrabber).setGoogleStockPrice(price);;
+	}
+	
+	private void printStockPrices(double randNum)
+	{
+	    System.out.println(stock + " Stock: " + formatPriceToTwoDecimalPlaces().format((price+randNum)) + "\nChange: " + formatPriceToTwoDecimalPlaces().format(randNum));
 	}
 }
