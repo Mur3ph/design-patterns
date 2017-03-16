@@ -4,30 +4,30 @@ import java.text.DecimalFormat;
 
 public class GetStockPricesUsingThreads implements Runnable
 {
-    private int startTime;
-	private String stock;
-	private double price;
+    	private final int numberOfLoops = 20;
+    	private int threadStartTime;
+	private String companyNameOfStock;
+	private double stockPrice;
 	
 	private Subject stockGrabber;
 	
-	public GetStockPricesUsingThreads(Subject stockGrabber, int newStartTime, String newStock, double newPrice)
+	public GetStockPricesUsingThreads(Subject stockGrabber, int threadStartTime, String companyNameOfStock, double stockPrice)
 	{
 	    System.out.println("\n++GetStockPricesUsingThreads Thread Class\n");
 	    this.stockGrabber = stockGrabber;
-	    startTime = newStartTime;
-	    stock = newStock;
-	    price = newPrice;
+	    this.threadStartTime = threadStartTime;
+	    this.companyNameOfStock = companyNameOfStock;
+	    this.stockPrice = stockPrice;
 	}
 	
 	@Override
 	public void run() 
 	{
-	    for(int i = 0; i <= 20; i++)
+	    for(int iteration = 0; iteration <= numberOfLoops; iteration++)
 	    {
-			
 		try
 		{
-		    Thread.sleep(startTime * 1000);
+		    Thread.sleep(threadStartTime * 1000);
 //		    Thread.sleep(3000);
 		}
 		catch(InterruptedException e)
@@ -36,23 +36,28 @@ public class GetStockPricesUsingThreads implements Runnable
 		}
 		finally
 		{
-		    double randNum = getRandomStockPrice();
-		    price = Double.valueOf(formatPriceToTwoDecimalPlaces().format((price+randNum)));
+		    double randomStockPriceMarketChange = getRandomStockPriceMarketChange();
+		    stockPrice = getStockPrice(randomStockPriceMarketChange);
 				
 		    isIBMStock();
 		    isAppleStock();
 		    isGoogleStock();
 				
-		    printStockPrices(randNum);
+		    printStockPrices(randomStockPriceMarketChange);
 		    System.out.println("");
 		}
 			
 	    }
 	}
 	
-	private double getRandomStockPrice()
+	private double getRandomStockPriceMarketChange()
 	{
 	    return (Math.random() * (0.06) - 0.03);
+	}
+	
+	private double getStockPrice(double randomStockPrice)
+	{
+	    return Double.valueOf(formatPriceToTwoDecimalPlaces().format((stockPrice+randomStockPrice)));
 	}
 	
 	private DecimalFormat formatPriceToTwoDecimalPlaces()
@@ -62,21 +67,22 @@ public class GetStockPricesUsingThreads implements Runnable
 	
 	private void isIBMStock()
 	{
-	    if(stock == "IBM") ((StockGrabber) stockGrabber).setIBMStockPrice(price);
+	    if(companyNameOfStock == "IBM") ((StockGrabber) stockGrabber).setIBMStockPrice(stockPrice);
 	}
 	
 	private void isAppleStock()
 	{
-	    if(stock == "APPLE") ((StockGrabber) stockGrabber).setAppleStockPrice(price);;
+	    if(companyNameOfStock == "APPLE") ((StockGrabber) stockGrabber).setAppleStockPrice(stockPrice);;
 	}
 	
 	private void isGoogleStock()
 	{
-	    if(stock == "GOOGLE") ((StockGrabber) stockGrabber).setGoogleStockPrice(price);;
+	    if(companyNameOfStock == "GOOGLE") ((StockGrabber) stockGrabber).setGoogleStockPrice(stockPrice);;
 	}
 	
-	private void printStockPrices(double randNum)
+	private void printStockPrices(double randomStockPriceMarketChange)
 	{
-	    System.out.println(stock + " Stock: " + formatPriceToTwoDecimalPlaces().format((price+randNum)) + "\nChange: " + formatPriceToTwoDecimalPlaces().format(randNum));
+	    System.out.println(companyNameOfStock + " Stock: " + formatPriceToTwoDecimalPlaces().format((stockPrice + randomStockPriceMarketChange)) + 
+		    	               "\nChange: " + formatPriceToTwoDecimalPlaces().format(randomStockPriceMarketChange));
 	}
 }
