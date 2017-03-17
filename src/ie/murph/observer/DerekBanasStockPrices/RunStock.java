@@ -51,7 +51,8 @@ public class RunStock
     
     private static Runnable getIBMStockPrices(StockGrabber stockGrabber)
     {
-	return new GetStockPricesUsingThreads(stockGrabber, 2, "IBM", 197.00);
+	return new GetStockPricesUsingThreads.Builder().StockGrabber(stockGrabber).ThreadStartTime(2).CompanyNameOfStock("IBM").StockPrice(197.00);
+//	return new GetStockPricesUsingThreads(stockGrabber, 2, "IBM", 197.00);
     }
     
     private static void startAPPLEStockPricesThread(StockGrabber stockGrabber)
@@ -61,7 +62,8 @@ public class RunStock
     
     private static Runnable getAPPLEStockPrices(StockGrabber stockGrabber)
     {
-	return new GetStockPricesUsingThreads(stockGrabber, 4, "APPLE", 677.60);
+	return new GetStockPricesUsingThreads.Builder().StockGrabber(stockGrabber).ThreadStartTime(4).CompanyNameOfStock("APPLE").StockPrice(677.60);
+//	return new GetStockPricesUsingThreads(stockGrabber, 4, "APPLE", 677.60);
     }
     
     private static void startGOOGLEStockPricesThread(StockGrabber stockGrabber)
@@ -71,6 +73,7 @@ public class RunStock
     
     private static Runnable getGOOGLEStockPrices(StockGrabber stockGrabber)
     {
-	return new GetStockPricesUsingThreads(stockGrabber, 6, "GOOGLE", 676.40);
+	return new GetStockPricesUsingThreads.Builder().StockGrabber(stockGrabber).ThreadStartTime(6).CompanyNameOfStock("GOOGLE").StockPrice(676.40);
+//	return new GetStockPricesUsingThreads(stockGrabber, 6, "GOOGLE", 676.40);
     }
 }
