@@ -4,7 +4,6 @@ import java.text.DecimalFormat;
 
 public class GetStockPricesUsingThreads
 {
-    	private final int numberOfLoops = 20;
     	private final int threadStartTime;
 	private final String companyNameOfStock;
 	private final double stockPrice;
@@ -19,6 +18,27 @@ public class GetStockPricesUsingThreads
 	    this.stockPrice = builder.stockPrice;
 	}
 	
+	public int getThreadStartTime()
+	{
+	    return threadStartTime;
+	}
+
+	public String getCompanyNameOfStock()
+	{
+	    return companyNameOfStock;
+	}
+
+	public double getStockPrice()
+	{
+	    return stockPrice;
+	}
+
+	public Subject getStockGrabber()
+	{
+	    return stockGrabber;
+	}
+
+
 	public static class Builder implements Runnable
 	{
 	    private final int numberOfLoops = 20;
