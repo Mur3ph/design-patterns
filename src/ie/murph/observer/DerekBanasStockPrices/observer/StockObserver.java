@@ -1,4 +1,6 @@
-package ie.murph.observer.DerekBanasStockPrices;
+package ie.murph.observer.DerekBanasStockPrices.observer;
+
+import ie.murph.observer.DerekBanasStockPrices.subject.Subject;
 
 public class StockObserver implements Observer
 {

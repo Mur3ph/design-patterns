@@ -1,5 +1,9 @@
 package ie.murph.observer.DerekBanasStockPrices;
 
+import ie.murph.observer.DerekBanasStockPrices.observer.StockObserver;
+import ie.murph.observer.DerekBanasStockPrices.subject.GetStockPricesUsingThreads;
+import ie.murph.observer.DerekBanasStockPrices.subject.StockGrabber;
+
 public class RunStock
 {
     public static void main(String[] args)

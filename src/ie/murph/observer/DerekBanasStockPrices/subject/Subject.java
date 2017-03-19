@@ -1,4 +1,6 @@
-package ie.murph.observer.DerekBanasStockPrices;
+package ie.murph.observer.DerekBanasStockPrices.subject;
+
+import ie.murph.observer.DerekBanasStockPrices.observer.Observer;
 
 public interface Subject 
 {
