@@ -1,4 +1,4 @@
-package ie.murph.observer.read.test;
+package ie.murph.observer.read.test.urlconnection;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

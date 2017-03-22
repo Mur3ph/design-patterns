@@ -1,4 +1,4 @@
-package ie.murph.observer.read.test;
+package ie.murph.observer.read.test.JSoup;
 
 import java.io.IOException;
 
@@ -12,11 +12,11 @@ public class MyJSoup
     private Document URLConnection;
     private Elements HTMLElement;
     
-    public void connectToWebPage(String webPage)
+    public void connectToWebPage(String webPageURL)
     {
 	try
 	{
-	    URLConnection = Jsoup.connect(webPage).get();
+	    URLConnection = Jsoup.connect(webPageURL).get();
 	} 
 	catch (IOException e)
 	{
