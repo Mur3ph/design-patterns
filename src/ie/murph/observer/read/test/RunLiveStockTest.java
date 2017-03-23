@@ -32,11 +32,8 @@ public class RunLiveStockTest
         return MyURLTest.getUrlAsString(url + companySymbol);
     }
     
-    private static void readHTMLUsingJSoup(String url, String htmlElement)
+    private static String readHTMLUsingJSoup(String url, String htmlElement)
     {
-	MyJSoup myJSoup = new MyJSoup();
-	myJSoup.connectToWebPage(url);
-	myJSoup.setHTMLElement(htmlElement);
-	System.out.println(myJSoup.printAllHTMLElement());
+	return new MyJSoup.Builder().URLConnection(url).getHTMLDocument().selectHTMLElement(htmlElement).printSelectedHTMLElement();
     }
 }
