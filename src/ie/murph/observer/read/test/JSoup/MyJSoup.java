@@ -21,6 +21,21 @@ public class MyJSoup
 	this.HTMLElement = builder.HTMLElement;
     }
     
+    public Connection getURLConnection()
+    {
+        return URLConnection;
+    }
+
+    public Document getURLDocument()
+    {
+        return URLDocument;
+    }
+
+    public Elements getHTMLElement()
+    {
+        return HTMLElement;
+    }
+    
     public static class Builder
     {
 	    private Connection URLConnection;
