@@ -9,7 +9,8 @@ import org.jsoup.select.Elements;
 
 public class MyJSoup
 {
-//  jsoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods
+//  JSoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting and 
+//  manipulating data, using the best of DOM, CSS, and JQuery-like methods
     private final Connection URLConnection;
     private final Document URLDocument;
     private final Elements HTMLElement;
