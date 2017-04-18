@@ -40,7 +40,7 @@ public class StockGrabber implements Subject
 	    System.out.println("++notifyObserver()\n");
 	    for(Observer observer : this.observers)
 	    {
-		observer.udate(appleStockPrice, googleStockPrice, ibmStockPrice);
+		observer.update(appleStockPrice, googleStockPrice, ibmStockPrice);
 	    }
 	    System.out.println("--notifyObserver()\n");
 	}
