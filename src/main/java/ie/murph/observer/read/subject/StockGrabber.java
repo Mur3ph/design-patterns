@@ -1,9 +1,9 @@
-package main.java.ie.murph.observer.read.main.subject;
+package main.java.ie.murph.observer.read.subject;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.ie.murph.observer.read.main.observer.Observer;
+import main.java.ie.murph.observer.read.observer.Observer;
 
 public class StockGrabber implements Subject
 {

@@ -1,8 +1,8 @@
-package main.java.ie.murph.observer.read.main;
+package main.java.ie.murph.observer.read;
 
-import main.java.ie.murph.observer.read.main.observer.StockObserver;
-import main.java.ie.murph.observer.read.main.subject.GetStockPricesUsingThreads;
-import main.java.ie.murph.observer.read.main.subject.StockGrabber;
+import main.java.ie.murph.observer.read.observer.StockObserver;
+import main.java.ie.murph.observer.read.subject.GetStockPricesUsingThreads;
+import main.java.ie.murph.observer.read.subject.StockGrabber;
 
 public class RunLiveStock
 {

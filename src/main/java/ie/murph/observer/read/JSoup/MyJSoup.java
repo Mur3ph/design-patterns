@@ -1,4 +1,4 @@
-package main.java.ie.murph.observer.read.test.JSoup;
+package main.java.ie.murph.observer.read.JSoup;
 
 import java.io.IOException;
 

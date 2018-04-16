@@ -1,11 +1,11 @@
-package main.java.ie.murph.observer.read.test.urlconnection;
+package main.java.ie.murph.observer.read.urlconnection;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 
-public class MyURLTest
+public class MyURL
 {
     private static URL urlObj;
     public static String getUrlAsString(String url)

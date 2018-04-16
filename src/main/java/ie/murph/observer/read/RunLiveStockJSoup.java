@@ -1,9 +1,9 @@
-package main.java.ie.murph.observer.read.test;
+package main.java.ie.murph.observer.read;
 
-import main.java.ie.murph.observer.read.test.JSoup.MyJSoup;
-import main.java.ie.murph.observer.read.test.urlconnection.MyURLTest;
+import main.java.ie.murph.observer.read.JSoup.MyJSoup;
+import main.java.ie.murph.observer.read.urlconnection.MyURL;
 
-public class RunLiveStockTest
+public class RunLiveStockJSoup
 {
     private final static String YAHOO_FINANCE_QUOTE_URL = "http://finance.yahoo.com/quote/";
     private final static String WIKIPEDIA_URL = "http://en.wikipedia.org/";
@@ -29,7 +29,7 @@ public class RunLiveStockTest
     // Given symbol, get HTML
     private static String readHTML(String url, String companySymbol) 
     {
-        return MyURLTest.getUrlAsString(url + companySymbol);
+        return MyURL.getUrlAsString(url + companySymbol);
     }
     
     private static String readHTMLUsingJSoup(String url, String htmlElement)
