@@ -1,4 +1,4 @@
-package ie.murph.observer.read.main.observer;
+package main.java.ie.murph.observer.read.main.observer;
 
 public interface Observer 
 {

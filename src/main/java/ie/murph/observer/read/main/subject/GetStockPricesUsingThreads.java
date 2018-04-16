@@ -1,4 +1,4 @@
-package ie.murph.observer.read.main.subject;
+package main.java.ie.murph.observer.read.main.subject;
 
 import java.text.DecimalFormat;
 

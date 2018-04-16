@@ -1,4 +1,4 @@
-package ie.murph.observer.DerekBanasStockPrices.subject;
+package main.java.ie.murph.observer.DerekBanasStockPrices.subject;
 
 import java.text.DecimalFormat;
 

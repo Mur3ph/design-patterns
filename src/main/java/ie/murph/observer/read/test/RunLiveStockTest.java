@@ -1,7 +1,7 @@
-package ie.murph.observer.read.test;
+package main.java.ie.murph.observer.read.test;
 
-import ie.murph.observer.read.test.JSoup.MyJSoup;
-import ie.murph.observer.read.test.urlconnection.MyURLTest;
+import main.java.ie.murph.observer.read.test.JSoup.MyJSoup;
+import main.java.ie.murph.observer.read.test.urlconnection.MyURLTest;
 
 public class RunLiveStockTest
 {

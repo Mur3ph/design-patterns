@@ -1,6 +1,6 @@
-package ie.murph.observer.read.main.subject;
+package main.java.ie.murph.observer.read.main.subject;
 
-import ie.murph.observer.read.main.observer.Observer;
+import main.java.ie.murph.observer.read.main.observer.Observer;
 
 public interface Subject 
 {

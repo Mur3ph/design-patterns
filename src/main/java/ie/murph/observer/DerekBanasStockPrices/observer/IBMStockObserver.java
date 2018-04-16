@@ -1,6 +1,6 @@
-package ie.murph.observer.DerekBanasStockPrices.observer;
+package main.java.ie.murph.observer.DerekBanasStockPrices.observer;
 
-import ie.murph.observer.DerekBanasStockPrices.subject.Subject;
+import main.java.ie.murph.observer.DerekBanasStockPrices.subject.Subject;
 
 public class IBMStockObserver implements Observer {
 	private int observerId;

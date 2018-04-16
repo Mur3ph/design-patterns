@@ -1,9 +1,9 @@
-package ie.murph.observer.DerekBanasStockPrices.subject;
+package main.java.ie.murph.observer.DerekBanasStockPrices.subject;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import ie.murph.observer.DerekBanasStockPrices.observer.Observer;
+import main.java.ie.murph.observer.DerekBanasStockPrices.observer.Observer;
 
 public class StockGrabber implements Subject {
 	private List<Observer> observers;

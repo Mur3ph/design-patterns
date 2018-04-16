@@ -1,8 +1,8 @@
-package ie.murph.observer.DerekBanasStockPrices;
+package main.java.ie.murph.observer.DerekBanasStockPrices;
 
-import ie.murph.observer.DerekBanasStockPrices.observer.StockObserver;
-import ie.murph.observer.DerekBanasStockPrices.subject.GetStockPricesUsingThreads;
-import ie.murph.observer.DerekBanasStockPrices.subject.StockGrabber;
+import main.java.ie.murph.observer.DerekBanasStockPrices.observer.StockObserver;
+import main.java.ie.murph.observer.DerekBanasStockPrices.subject.GetStockPricesUsingThreads;
+import main.java.ie.murph.observer.DerekBanasStockPrices.subject.StockGrabber;
 
 public class RunStock {
 	public static void main(String[] args) {

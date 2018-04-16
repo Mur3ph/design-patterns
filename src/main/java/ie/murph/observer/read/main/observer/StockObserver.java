@@ -1,6 +1,6 @@
-package ie.murph.observer.read.main.observer;
+package main.java.ie.murph.observer.read.main.observer;
 
-import ie.murph.observer.read.main.subject.Subject;;
+import main.java.ie.murph.observer.read.main.subject.Subject;;
 
 public class StockObserver implements Observer
 {
