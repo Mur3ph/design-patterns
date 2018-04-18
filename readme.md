@@ -24,7 +24,7 @@
  * Encapsulation
  * Polymorphism 
 2. [Guide to Java Reflection | Baeldung](http://www.baeldung.com/java-reflection)
-3. [Clean Code principles](https://marcus-biel.com/clean-code-principles/)
+3. [Clean Code Principles (My Bible :))](https://marcus-biel.com/clean-code-principles/)
 4. [S.O.L.I.D](https://dzone.com/articles/the-solid-principles-in-real-life)
  * Single responsibility principle - A class should have only one reason to change.
  * Open/Closed principle - Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
