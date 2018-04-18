@@ -12,12 +12,26 @@
  * jsoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods
 4. Network programming
  * Read nerd
-5. The Cornerstones of [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) (OOP)
+
+ 
+ 
+## Object-Oriented Fundamentals and Best Practices
+
+1. The Cornerstones of [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) (OOP)
  * [Inheritance](http://www.baeldung.com/java-inheritance) and;
  * [Composition](http://www.baeldung.com/java-inheritance-composition) 
  * Abstraction
  * Encapsulation
  * Polymorphism 
+2. [Guide to Java Reflection | Baeldung](http://www.baeldung.com/java-reflection)
+3. [Clean Code principles](https://marcus-biel.com/clean-code-principles/)
+4. [S.O.L.I.D](https://dzone.com/articles/the-solid-principles-in-real-life)
+ * Single responsibility principle - A class should have only one reason to change.
+ * Open/Closed principle - Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
+ * Liskov Substitution Principle - Child classes should never break the parent class type definitions.
+ * Interface Segregation Principle - No client should be forced to depend on methods it does not use.
+ * Dependency inversion principle - High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend upon details. Details should depend upon abstractions.
+
 
 
 
