@@ -61,6 +61,27 @@ According to the Gang Of Four (GoF), design patterns can be classified into thre
 4. Popular Patterns
  * [The Big Ball of Mud :)](https://en.wikipedia.org/wiki/Big_ball_of_mud)
    
+
+   
+## Architecture
+
+1. [AWS Architecture](https://aws.amazon.com/architecture/)
+ * [Architecture Diagrams](https://www.pinterest.ie/pin/375487687655604514/)
+2. [Load Balancing](http://tutorials.jenkov.com/software-architecture/load-balancing.html) 
+ * [Types of Load Balancing](https://www.esds.co.in/blog/types-of-load-balancing/#sthash.zghIRpCv.dpbs)
+3. [Service-Oriented Architecture (SOA)]()
+ * [Messaging, (e.g. ActiveMQ, JMS, RabbitMQ, IBM MQ]()
+ * [WCF](https://en.wikipedia.org/wiki/Windows_Communication_Foundation) (Microsoft's implementation of Web services, forming a part of WCF)
+ * [Web services](https://en.wikipedia.org/wiki/Web_services) based on WSDL and [SOAP](https://en.wikipedia.org/wiki/SOAP)
+ * RESTful HTTP, with [Representational state transfer (REST)](https://en.wikipedia.org/wiki/Representational_state_transfer) constituting its own constraints-based architectural style
+4. [Java Messaging Service (JMS) Architecture](https://docs.oracle.com/cd/E19798-01/821-1841/6nmq2cpp4/index.html) The Java Message Service (JMS) is not in itself a service-oriented architecture (SOA) - it's a transport layer used for components in a SOA to talk to each other. Therefore, you could say that Java Message Service is used as part of a service-oriented architecture. Take note that JMS is a specification and not a piece of software; for example there are ActiveMQ for an open source example, and WebSphere MQ as a commercial one.
+ * [JMS broker (Stackoverflow)](https://stackoverflow.com/questions/1035949/real-world-use-of-jms-message-queues?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
+ * [Apache ActiveMQ (Open source)](https://www.quora.com/topic/ActiveMQ)
+ * [IBM WebSphere MQ (Commercial)](https://www.ibm.com/support/knowledgecenter/en/SS9H2Y_7.5.0/com.ibm.dp.doc/mq_basicarchitecture.html)
+ * [RabbitMQ (Open source)](https://www.rabbitmq.com/)
+5. [Software Architecture](http://tutorials.jenkov.com/software-architecture/index.html)
+6. [Computer Architecture](http://tutorials.jenkov.com/software-architecture/computer-architecture.html)
+   
    
    
 ## Observer Pattern
