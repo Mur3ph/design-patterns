@@ -20,9 +20,9 @@
 1. The Cornerstones of [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) (OOP)
  * [Inheritance](http://www.baeldung.com/java-inheritance) and;
  * [Composition](http://www.baeldung.com/java-inheritance-composition) 
- * Abstraction
- * Encapsulation
- * Polymorphism 
+ * [Abstraction](https://dzone.com/articles/oop-concept-for-beginners-what-is-abstraction)
+ * [Encapsulation](https://stackify.com/oop-concept-for-beginners-what-is-encapsulation/)
+ * [Polymorphism](https://stackoverflow.com/questions/1031273/what-is-polymorphism-what-is-it-for-and-how-is-it-used?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa) 
 2. [Guide to Java Reflection | Baeldung](http://www.baeldung.com/java-reflection)
 3. [Clean Code Principles (My Bible :))](https://marcus-biel.com/clean-code-principles/)
 4. [S.O.L.I.D](https://dzone.com/articles/the-solid-principles-in-real-life)
@@ -54,7 +54,7 @@ According to the Gang Of Four (GoF), design patterns can be classified into thre
  * [Builder Pattern( While Writing Unit Tests )](https://stackoverflow.com/questions/5007355/builder-pattern-in-effective-java)
  * [Factory Pattern(Web framewroks)](https://dzone.com/articles/java-the-factory-pattern)
  * [Singleton](https://stackoverflow.com/questions/70689/what-is-an-efficient-way-to-implement-a-singleton-pattern-in-java)
-3. Behavioural Patterns
+3. [Behavioural Patterns](https://refactoring.guru/design-patterns/behavioral-patterns)
  * [Strategy Pattern(Dependency Injection)](https://dzone.com/articles/java-the-strategy-pattern)
  * [Observer Pattern by Baeldung](http://www.baeldung.com/java-observer-pattern)
   * [Observer Pattern(Event Listener)](https://dzone.com/articles/the-observer-pattern-using-modern-java)
