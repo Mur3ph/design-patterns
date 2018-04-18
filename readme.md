@@ -4,14 +4,20 @@
 
 1. Java
 2. Patterns and Coding Practices
-   ** Observer
-   ** Builder Constructor
-   ** S.O.L.I.D
-   ** Clean Code principles
+ ** Observer
+ ** Builder Constructor
+ ** S.O.L.I.D
+ ** Clean Code principles
 3. JSoup
-   ** jsoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods
+ ** jsoup is a Java library for working with real-world HTML. It provides a very convenient API for extracting and manipulating data, using the best of DOM, CSS, and jquery-like methods
 4. Network programming
-   ** Read nerd
+ ** Read nerd
+5. The Cornerstones of [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming) (OOP)
+ * [Inheritance](http://www.baeldung.com/java-inheritance) and;
+ * Composition 
+ * Abstraction
+ * Encapsulation
+ * Polymorphism 
 
 
 
