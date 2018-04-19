@@ -80,6 +80,7 @@ According to the Gang Of Four (GoF), design patterns can be classified into thre
  * [IBM WebSphere MQ (Commercial)](https://www.ibm.com/support/knowledgecenter/en/SS9H2Y_7.5.0/com.ibm.dp.doc/mq_basicarchitecture.html)
  * [RabbitMQ (Open source)](https://www.rabbitmq.com/)
 5. [Web Server Architecture (e.g. IIS : ASP (.NET), Tomcat : Servlet, Jetty : Servlet, Apache : Php, CGI )]()
+ * [Differnece between Application server and Web server](https://stackoverflow.com/questions/936197/what-is-the-difference-between-application-server-and-web-server)
 6. [Application Server Architecture (e.g. MTS : COM+, WAS : EJB, JBoss : EJB, WebLogic Application Server : EJB)]()
 7. [Software Architecture](http://tutorials.jenkov.com/software-architecture/index.html)
 8. [Computer Architecture](http://tutorials.jenkov.com/software-architecture/computer-architecture.html)
