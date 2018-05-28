@@ -50,6 +50,7 @@ According to the Gang Of Four (GoF), design patterns can be classified into thre
 1. [Structural Patterns:](https://refactoring.guru/design-patterns/structural-patterns) 
  * [Proxy, Decorator, Adapter and Bridge Patterns by Baeldung](http://www.baeldung.com/java-structural-design-patterns)
  * [Facade(REST)](https://dzone.com/articles/design-patterns-uncovered-1)
+ * [Flyweight](https://nobugsproject.com/2017/10/11/design-patterns-saga-18-real-project-situations-with-flyweight/)
 2. [Creational Patterns](http://www.baeldung.com/creational-design-patterns)
  * [Builder Pattern( While Writing Unit Tests )](https://stackoverflow.com/questions/5007355/builder-pattern-in-effective-java)
  * [Factory Pattern(Web framewroks)](https://dzone.com/articles/java-the-factory-pattern)
