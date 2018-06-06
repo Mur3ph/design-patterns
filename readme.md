@@ -99,3 +99,8 @@ According to the Gang Of Four (GoF), design patterns can be classified into thre
 5. [Source Making: Observer Pattern](https://sourcemaking.com/design_patterns/observer)
 6. [DevJournal](http://www.journaldev.com/1739/observer-design-pattern-in-java)
 7. [Wikipedia: Publish–subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
+
+
+
+## Video
+1. [Functional Programming Patterns with Java8 with Victor Rentea (Clean Code)](https://www.youtube.com/watch?v=F02LKnWJWF4&feature=youtu.be)
