@@ -32,7 +32,8 @@
  * Interface Segregation Principle - No client should be forced to depend on methods it does not use.
  * Dependency inversion principle - High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend upon details. Details should depend upon abstractions.
  * [SOLID Design Principles Explained – Dependency Inversion Principle with Code Examples](https://stackify.com/dependency-inversion-principle/)
-
+5. [UML Diagrams](https://tallyfy.com/uml-diagram/)
+ 
 
 
 ## Design Pattern Types
@@ -59,7 +60,8 @@ According to the Gang Of Four (GoF), design patterns can be classified into thre
  * [Strategy Pattern(Dependency Injection)](https://dzone.com/articles/java-the-strategy-pattern)
  * [Observer Pattern by Baeldung](http://www.baeldung.com/java-observer-pattern)
   * [Observer Pattern(Event Listener)](https://dzone.com/articles/the-observer-pattern-using-modern-java)
-4. Popular Patterns
+4. [Architectural Pattern](https://en.wikipedia.org/wiki/Architectural_pattern)
+5. Popular Patterns
  * [The Big Ball of Mud :)](https://en.wikipedia.org/wiki/Big_ball_of_mud)
    
 
