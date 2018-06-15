@@ -90,6 +90,11 @@ According to the Gang Of Four (GoF), design patterns can be classified into thre
    
    
    
+## Tutorial
+1. [Design Patterns Saga (20+ Patterns by Rafa Del Nero)](https://nobugsproject.com/category/design-patterns-saga/)   
+   
+   
+   
 ## Observer Pattern
 
 1. [Tutorial Point - Observer Pattern](https://www.tutorialspoint.com/design_pattern/observer_pattern.htm)
