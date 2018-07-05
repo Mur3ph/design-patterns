@@ -24,3 +24,4 @@ Behavioral patterns are responsible for the efficient and safe distribution of b
 7. [Wikipedia: Publish–subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern)
 8 [Observer Pattern by Baeldung](http://www.baeldung.com/java-observer-pattern)
   * [Observer Pattern(Event Listener)](https://dzone.com/articles/the-observer-pattern-using-modern-java)
+9. [Design Patterns Saga #20: Real World Situations With Observer (By rafaDelNero)](https://nobugsproject.com/2017/10/27/design-patterns-saga-20-real-world-situations-with-observer/)
